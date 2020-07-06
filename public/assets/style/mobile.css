@@ -1,0 +1,53 @@
+#mobile-sidebar{
+        width: 50px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+        background: #212330;
+    }
+
+    #mobile-sidebar .mobile-header{
+        background: #212330;
+        height: 65px;
+        justify-content: center;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        padding: 2px;
+    }
+    #mobile-sidebar ul li a{
+        padding: 10px 10px;
+        font-size: 20px;
+        display: block;
+        color: #d8d7d7;
+        border-bottom: 1px solid hsla(0, 0%, 9%, .5);
+        box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    }
+    #mobile-sidebar ul li a:hover {
+        color: #d8d7d7;
+        background: #1b1c27;
+    }
+
+    #mobile-sidebar ul li:hover ul{
+        display: block;
+    }
+
+    #mobile-sidebar ul li ul{
+        position: absolute;
+        left: 50px;
+        background: #3d4056;
+        top: 0;
+        display: none;
+        width: 400%;
+    }
+
+    #mobile-sidebar ul li ul li a{
+        font-size: 13px;
+    }
